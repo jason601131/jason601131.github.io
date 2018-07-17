@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Hexo語法筆記 | J&#39;s畫圈圈角落</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="[快速還原]1234567891011121314151.先刪除 blog 資料夾2.安裝Hexo框架npm install hexo-cli -g3.初始化blog資料夾hexo init blog4.切換至blog資料夾cd blog5.安裝npm套件npm install6.然後安裝Git佈署套件npm install hexo-deployer-git --save7.輸入以下指令進行佈署">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo語法筆記">
+<meta property="og:url" content="http://yoursite.com/2018/07/03/Hexo語法筆記/index.html">
+<meta property="og:site_name" content="J&#39;s畫圈圈角落">
+<meta property="og:description" content="[快速還原]1234567891011121314151.先刪除 blog 資料夾2.安裝Hexo框架npm install hexo-cli -g3.初始化blog資料夾hexo init blog4.切換至blog資料夾cd blog5.安裝npm套件npm install6.然後安裝Git佈署套件npm install hexo-deployer-git --save7.輸入以下指令進行佈署">
+<meta property="og:locale" content="zh-TW">
+<meta property="og:image" content="http://yoursite.com/2018/07/03/Hexo語法筆記/image/HexoNew.png">
+<meta property="og:updated_time" content="2018-07-17T02:37:11.297Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo語法筆記">
+<meta name="twitter:description" content="[快速還原]1234567891011121314151.先刪除 blog 資料夾2.安裝Hexo框架npm install hexo-cli -g3.初始化blog資料夾hexo init blog4.切換至blog資料夾cd blog5.安裝npm套件npm install6.然後安裝Git佈署套件npm install hexo-deployer-git --save7.輸入以下指令進行佈署">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/03/Hexo語法筆記/image/HexoNew.png">
+    
+
+    
+        <link rel="alternate" href="/" title="J&#39;s畫圈圈角落" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">首頁</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">關於</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜尋" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="輸入關鍵字(休息,食記...)" />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '頁面',
+            CATEGORIES: '分類',
+            TAGS: '標籤',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    未分類
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-Hexo語法筆記" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Hexo語法筆記
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/07/03/Hexo語法筆記/" class="article-date">
+            <time datetime="2018-07-03T08:18:30.000Z" itemprop="datePublished">2018-07-03</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h3 id="快速還原"><a href="#快速還原" class="headerlink" title="[快速還原]"></a>[快速還原]</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1.先刪除 blog 資料夾</span><br><span class="line">2.安裝Hexo框架</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">3.初始化blog資料夾</span><br><span class="line">hexo init blog</span><br><span class="line">4.切換至blog資料夾</span><br><span class="line">cd blog</span><br><span class="line">5.安裝npm套件</span><br><span class="line">npm install</span><br><span class="line">6.然後安裝Git佈署套件</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">7.輸入以下指令進行佈署</span><br><span class="line">hexo g         #編譯成靜態檔案</span><br><span class="line">hexo d         #佈署到倉庫</span><br><span class="line">hexo g -d      #編譯成靜態檔案 + 佈署到倉庫</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="首頁不顯示文章內容"><a href="#首頁不顯示文章內容" class="headerlink" title="[首頁不顯示文章內容]"></a>[首頁不顯示文章內容]</h3><h5 id="語法"><a href="#語法" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- read</span><br><span class="line">categories: </span><br><span class="line">- read</span><br><span class="line">notshow: true</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="圖片顯示"><a href="#圖片顯示" class="headerlink" title="[圖片顯示]"></a>[圖片顯示]</h3><h5 id="語法-1"><a href="#語法-1" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](image\1.jpg)</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="圖片顯示-1"><a href="#圖片顯示-1" class="headerlink" title="[圖片顯示]"></a>[圖片顯示]</h3><h5 id="語法-2"><a href="#語法-2" class="headerlink" title="語法:"></a>語法:</h5><h5 id="請先將-config-yml裡的-Writing-設定更改"><a href="#請先將-config-yml裡的-Writing-設定更改" class="headerlink" title="請先將_config.yml裡的 # Writing 設定更改"></a>請先將_config.yml裡的 # Writing 設定更改</h5><p><img src="image\HexoNew.png" alt=""></p>
+<hr>
+<h3 id="超連結"><a href="#超連結" class="headerlink" title="[超連結]"></a>[超連結]</h3><h5 id="語法-3"><a href="#語法-3" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#### [新番網址](https://anime1.me)</span><br></pre></td></tr></table></figure>
+<h5 id="範例"><a href="#範例" class="headerlink" title="範例:"></a>範例:</h5><h5 id="新番網址"><a href="#新番網址" class="headerlink" title="新番網址"></a><a href="https://anime1.me" target="_blank" rel="noopener">新番網址</a></h5><hr>
+<h3 id="字體"><a href="#字體" class="headerlink" title="[字體]"></a>[字體]</h3><h4 id="字型"><a href="#字型" class="headerlink" title="-字型-"></a>-字型-</h4><h5 id="語法-4"><a href="#語法-4" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一般的字</span><br><span class="line">**要加粗的字** (和&quot;#####字體&quot;差不多大)</span><br><span class="line">##### 各種大小的字</span><br><span class="line">#### 各種大小的字</span><br><span class="line">### 各種大小的字</span><br><span class="line">## 各種大小的字</span><br><span class="line"># 各種大小的字</span><br></pre></td></tr></table></figure>
+<h5 id="範例-1"><a href="#範例-1" class="headerlink" title="範例:"></a>範例:</h5><p>一般的字<br><strong>加粗的字</strong></p>
+<h6 id="最小且淺色的字"><a href="#最小且淺色的字" class="headerlink" title="最小且淺色的字"></a>最小且淺色的字</h6><h5 id="各種大小的字"><a href="#各種大小的字" class="headerlink" title="各種大小的字"></a>各種大小的字</h5><h4 id="各種大小的字-1"><a href="#各種大小的字-1" class="headerlink" title="各種大小的字"></a>各種大小的字</h4><h3 id="各種大小的字-2"><a href="#各種大小的字-2" class="headerlink" title="各種大小的字"></a>各種大小的字</h3><h2 id="各種大小的字-3"><a href="#各種大小的字-3" class="headerlink" title="各種大小的字"></a>各種大小的字</h2><h1 id="各種大小的字-4"><a href="#各種大小的字-4" class="headerlink" title="各種大小的字"></a>各種大小的字</h1><p>其他<br><img src="image\Word.png" alt=""></p>
+<h4 id="引用"><a href="#引用" class="headerlink" title="-引用-"></a>-引用-</h4><h5 id="語法-5"><a href="#語法-5" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 要引用的字</span><br><span class="line">&gt; 要引用的字</span><br></pre></td></tr></table></figure>
+<h5 id="範例-2"><a href="#範例-2" class="headerlink" title="範例:"></a>範例:</h5><blockquote>
+<p>要引用的字<br>要引用的字</p>
+</blockquote>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2018/07/03/Hexo語法筆記/" data-id="cjjp30hae000274k5fnnj324o" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>追隨 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/07/03/Hexo相關學習網站/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Hexo相關學習網站
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/16/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/16/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2018-07-16T02:03:11.090Z" itemprop="datePublished">2018-07-16</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/12/test/" class="thumbnail">
+    
+    
+        <span style="background-image:url(image\1234.png)" alt="test" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/12/test/" class="title">test</a></p>
+                            <p class="item-date"><time datetime="2018-07-12T06:46:54.000Z" itemprop="datePublished">2018-07-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/12/GCP筆記/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/12/GCP筆記/" class="title">GCP筆記</a></p>
+                            <p class="item-date"><time datetime="2018-07-11T16:00:00.000Z" itemprop="datePublished">2018-07-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/03/Hexo相關學習網站/" class="thumbnail">
+    
+    
+        <span style="background-image:url(image\1.jpg)" alt="Hexo相關學習網站" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/03/Hexo相關學習網站/" class="title">Hexo相關學習網站</a></p>
+                            <p class="item-date"><time datetime="2018-07-03T09:48:16.000Z" itemprop="datePublished">2018-07-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/03/Hexo語法筆記/" class="thumbnail">
+    
+    
+        <span style="background-image:url(image\HexoNew.png)" alt="Hexo語法筆記" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/07/03/Hexo語法筆記/" class="title">Hexo語法筆記</a></p>
+                            <p class="item-date"><time datetime="2018-07-03T08:18:30.000Z" itemprop="datePublished">2018-07-03</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">記錄</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">連結</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Jason</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://yoursite.com/2018/07/03/Hexo語法筆記/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
