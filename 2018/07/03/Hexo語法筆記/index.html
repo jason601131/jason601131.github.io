@@ -20,7 +20,7 @@
 <meta property="og:description" content="#進來看看歐">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="http://yoursite.com/2018/07/03/Hexo語法筆記/image/HexoNew.png">
-<meta property="og:updated_time" content="2018-07-20T07:02:40.301Z">
+<meta property="og:updated_time" content="2018-07-20T07:20:45.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo語法筆記">
 <meta name="twitter:description" content="#進來看看歐">
@@ -166,8 +166,7 @@
         <div class="article-entry" itemprop="articleBody">
             <p>#進來看看歐<br><a id="more"></a></p>
 <h3 id="首頁不顯示文章內容"><a href="#首頁不顯示文章內容" class="headerlink" title="[首頁不顯示文章內容]"></a>[首頁不顯示文章內容]</h3><h5 id="語法"><a href="#語法" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">顯示的內容</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">隱藏的內容</span><br></pre></td></tr></table></figure>
-<p>修改內容超連結的文字<br>在自己目前 themes 的 config裡面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">excerpt_link: 要顯示的文字</span><br></pre></td></tr></table></figure></p>
-<p>顯示的內容<br><!-- more --><br>隱藏的內容</p>
+<p>修改在文章外顯示的文字<br>在自己目前 themes 的 config裡面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">excerpt_link: 要顯示的文字</span><br></pre></td></tr></table></figure></p>
 <h3 id="快速還原"><a href="#快速還原" class="headerlink" title="[快速還原]"></a>[快速還原]</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1.先刪除 blog 資料夾</span><br><span class="line">2.安裝Hexo框架</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">3.初始化blog資料夾</span><br><span class="line">hexo init blog</span><br><span class="line">4.切換至blog資料夾</span><br><span class="line">cd blog</span><br><span class="line">5.安裝npm套件</span><br><span class="line">npm install</span><br><span class="line">6.然後安裝Git佈署套件</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">7.輸入以下指令進行佈署</span><br><span class="line">hexo g         #編譯成靜態檔案</span><br><span class="line">hexo d         #佈署到倉庫</span><br><span class="line">hexo g -d      #編譯成靜態檔案 + 佈署到倉庫</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="圖片顯示"><a href="#圖片顯示" class="headerlink" title="[圖片顯示]"></a>[圖片顯示]</h3><h5 id="語法-1"><a href="#語法-1" class="headerlink" title="語法:"></a>語法:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](image\1.jpg)</span><br></pre></td></tr></table></figure>
