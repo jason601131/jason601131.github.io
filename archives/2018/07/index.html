@@ -378,7 +378,11 @@ Quick
     
 
         <p class="article-excerpt">
-            [快速還原]1234567891011121314151.先刪除 blog 資料夾2.安裝Hexo框架npm install hexo-cli -g3.初始化blog資料夾hexo init blog4.切換至blog資料夾cd blog5.安裝npm套件npm install6.然後安裝Git佈署套件npm install hexo-deployer-git --save7.輸入以下指令進行佈署
+            [快速還原]1234567891011121314151.先刪除 blog 資料夾2.安裝Hexo框架npm install hexo-cli -g3.初始化blog資料夾hexo init blog4.切換至blog資料夾cd blog5.安裝npm套件npm install6.然後安裝Git佈署套件npm install hexo-deployer-git --save7.輸入以下指令進行佈署hexo g         #編譯成靜態檔案hexo d         #佈署到倉庫hexo g -d      #編譯成靜態檔案 + 佈署到倉庫
+
+[首頁不顯示文章內容]語法:123顯示的內容&lt;!-- more --&gt;隱藏的內容
+修改內容超連結的文字在自己目前 themes 的 config裡面1excerpt_link: 要顯示的文字
+顯示的內容
         </p>
     </div>
 </article>
